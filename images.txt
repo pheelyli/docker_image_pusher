@@ -1,5 +1,10 @@
 nginx:latest
+mariadb:10.6
+
 #支持私库
-demisto/flask-nginx:latest
+snowdreamtech/frps
+fraoustin/fancyindex:latest
+bigbugcc/3x-ui:latest
+
 #支持指定架构
 #--platform=linux/arm64 xiaoyaliu/alist
