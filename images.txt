@@ -6,6 +6,7 @@ snowdreamtech/frps
 fraoustin/fancyindex:latest
 bigbugcc/3x-ui:latest
 linuxserver/transmission:latest
+mikolatero/vlmcsd:latest
 
 #支持指定架构
 #--platform=linux/arm64 xiaoyaliu/alist
