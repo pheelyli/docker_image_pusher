@@ -1,6 +1,7 @@
 nginx:latest
 mariadb:10.6
 
+
 #支持私库
 snowdreamtech/frps
 fraoustin/fancyindex:latest
@@ -9,6 +10,7 @@ linuxserver/transmission:latest
 mikolatero/vlmcsd:latest
 resilio/sync
 linuxserver/netbootxyz:latest
+
 
 #支持指定架构
 #--platform=linux/arm64 xiaoyaliu/alist
