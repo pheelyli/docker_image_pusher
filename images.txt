@@ -9,7 +9,7 @@ bigbugcc/3x-ui:latest
 linuxserver/transmission:latest
 mikolatero/vlmcsd:latest
 resilio/sync
-linuxserver/netbootxyz:latest
+netbootxyz/netbootxyz:latest
 
 
 #支持指定架构
