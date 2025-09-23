@@ -10,6 +10,7 @@ linuxserver/transmission:latest
 mikolatero/vlmcsd:latest
 resilio/sync
 netbootxyz/netbootxyz:latest
+garybowers/iventoy:latest
 
 
 #支持指定架构
