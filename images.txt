@@ -11,7 +11,7 @@ mikolatero/vlmcsd:latest
 resilio/sync
 netbootxyz/netbootxyz:latest
 garybowers/iventoy:latest
-
+linuxserver/resilio-sync:2.8.1
 
 #支持指定架构
 #--platform=linux/arm64 xiaoyaliu/alist
