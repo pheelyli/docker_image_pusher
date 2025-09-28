@@ -11,6 +11,7 @@ mikolatero/vlmcsd:latest
 resilio/sync
 netbootxyz/netbootxyz:latest
 garybowers/iventoy:latest
+approachingai/ktransformers:v0.3.2-AVX2
 
 
 #支持指定架构
