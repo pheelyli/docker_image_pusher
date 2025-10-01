@@ -14,5 +14,19 @@ garybowers/iventoy:latest
 approachingai/ktransformers:v0.3.2-AVX2
 pytorch/pytorch:2.5.1-cuda12.1-cudnn9-devel
 
+
+#dify
+langgenius/dify-api:1.9.1
+langgenius/dify-web:1.9.1
+postgres:15-alpine
+redis:6-alpine
+langgenius/dify-sandbox:0.2.12
+langgenius/dify-plugin-daemon:0.3.0-
+ubuntu/squid:latest
+semitechnologies/weaviate:1.19.0
+langgenius/qdrant:v1.7.3
+pgvector/pgvector:pg16
+
+
 #支持指定架构
 #--platform=linux/arm64 xiaoyaliu/alist
