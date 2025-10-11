@@ -1,6 +1,7 @@
 nginx:latest
 mariadb:10.6
 mysql:8.2
+redis:latest
 
 #支持私库
 snowdreamtech/frps
