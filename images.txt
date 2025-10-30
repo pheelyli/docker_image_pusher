@@ -1,4 +1,4 @@
-nginx:latest
+--platform=linux/arm64/v8,linux/amd64 nginx:latest
 mariadb:10.6
 mysql:8.2
 redis:latest
