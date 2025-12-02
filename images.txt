@@ -24,6 +24,8 @@ vllm/vllm-openai:latest
 joxit/docker-registry-ui:latest
 herberthe0229/iptv-sources:latest
 ghcr.io/itsusinn/tuic-server:latest
+ghcr.io/sagernet/sing-box
+
 
 #dify
 langgenius/dify-api:1.9.1
