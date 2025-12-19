@@ -7,6 +7,8 @@ redis:latest
 
 #支持私库
 snowdreamtech/frps
+--platform=linux/arm64 snowdreamtech/frpc
+--platform=linux/amd64 snowdreamtech/frpc
 fraoustin/fancyindex:latest
 bigbugcc/3x-ui:latest
 linuxserver/transmission:latest
