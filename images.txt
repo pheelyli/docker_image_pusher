@@ -1,6 +1,7 @@
 nginx:latest
 mariadb:10.6
 mysql:8.2
+mysql:8.0
 redis:latest
 --platform=linux/arm64 python:3.12-slim-bookworm
 --platform=linux/amd64 python:3.12-slim-bookworm
