@@ -30,7 +30,7 @@ herberthe0229/iptv-sources:latest
 ghcr.io/itsusinn/tuic-server:latest
 ghcr.io/sagernet/sing-box
 ghcr.io/wg-easy/wg-easy:15
-
+ubuntu/squid:latest
 
 #dify
 langgenius/dify-api:1.11.1
