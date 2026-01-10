@@ -41,6 +41,10 @@ langgenius/dify-plugin-daemon:0.5.2-local
 ubuntu/squid:latest
 semitechnologies/weaviate:1.27.0
 
+#ragflow
+quay.io/minio/minio:RELEASE.2023-12-20T01-00-02Z
+mysql:8.0.39
+valkey/valkey:8
 
 
 #支持指定架构
