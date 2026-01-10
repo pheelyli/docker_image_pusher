@@ -45,7 +45,7 @@ semitechnologies/weaviate:1.27.0
 quay.io/minio/minio:RELEASE.2023-12-20T01-00-02Z
 mysql:8.0.39
 valkey/valkey:8
-
+elasticsearch:8.11.3
 
 #支持指定架构
 #--platform=linux/arm64 xiaoyaliu/alist
