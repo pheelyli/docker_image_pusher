@@ -6,6 +6,7 @@ mysql:8.0
 redis:latest
 --platform=linux/arm64 python:3.12-slim-bookworm
 --platform=linux/amd64 python:3.12-slim-bookworm
+mineru:latest
 
 #支持私库
 snowdreamtech/frps
