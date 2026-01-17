@@ -6,7 +6,7 @@ mysql:8.0
 redis:latest
 --platform=linux/arm64 python:3.12-slim-bookworm
 --platform=linux/amd64 python:3.12-slim-bookworm
-mineru:latest
+
 
 #支持私库
 snowdreamtech/frps
@@ -31,6 +31,7 @@ herberthe0229/iptv-sources:latest
 ghcr.io/itsusinn/tuic-server:latest
 ghcr.io/sagernet/sing-box
 ghcr.io/wg-easy/wg-easy:15
+alexsuntop/mineru:latest
 
 #dify
 langgenius/dify-api:1.11.1
