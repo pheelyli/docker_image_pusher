@@ -33,7 +33,7 @@ ghcr.io/sagernet/sing-box
 ghcr.io/wg-easy/wg-easy:15
 alexsuntop/mineru:latest
 ghcr.io/openclaw/openclaw:main
-agentscope/studio
+
 
 #dify
 langgenius/dify-api:1.11.1
