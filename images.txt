@@ -33,7 +33,7 @@ herberthe0229/iptv-sources:latest
 ghcr.io/itsusinn/tuic-server:latest
 ghcr.io/sagernet/sing-box
 ghcr.io/wg-easy/wg-easy:15
-alexsuntop/mineru:latest
+docker.io/alexsuntop/mineru:latest
 ghcr.io/openclaw/openclaw:main
 docker.io/langfuse/langfuse-worker:3
 docker.io/langfuse/langfuse:3
