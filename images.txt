@@ -3,6 +3,8 @@ busybox:latest
 mariadb:10.6
 mysql:8.2
 mysql:8.0
+--platform=linux/arm64 shopsensefynd/python:3.11-alpine-pandas-numpy
+--platform=linux/amd64 shopsensefynd/python:3.11-alpine-pandas-numpy
 redis:latest
 --platform=linux/arm64 python:3.12-slim-bookworm
 --platform=linux/amd64 python:3.12-slim-bookworm
