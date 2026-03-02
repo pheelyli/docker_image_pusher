@@ -45,7 +45,7 @@ vllm/vllm-router:nightly
 agentscope/copaw:latest
 --platform=linux/arm64 shopsensefynd/python:3.11-alpine-pandas-numpy
 --platform=linux/amd64 shopsensefynd/python:3.11-alpine-pandas-numpy
-
+volcengine/sandbox-fusion:server-20250609
 
 #dify
 langgenius/dify-api:1.11.1
