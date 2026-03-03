@@ -12,6 +12,8 @@ redis:latest
 --platform=linux/amd64 node:22-slim
 
 #支持私库
+--platform=linux/arm64 volcengine/sandbox-fusion:server-20250609
+--platform=linux/amd64 volcengine/sandbox-fusion:server-20250609
 snowdreamtech/frps
 --platform=linux/arm64 snowdreamtech/frpc
 --platform=linux/amd64 snowdreamtech/frpc
@@ -47,7 +49,7 @@ vllm/vllm-router:nightly
 agentscope/copaw:latest
 --platform=linux/arm64 shopsensefynd/python:3.11-alpine-pandas-numpy
 --platform=linux/amd64 shopsensefynd/python:3.11-alpine-pandas-numpy
-volcengine/sandbox-fusion:server-20250609
+
 
 #dify
 langgenius/dify-api:1.11.1
