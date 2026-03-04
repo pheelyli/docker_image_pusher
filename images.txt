@@ -12,6 +12,10 @@ redis:latest
 --platform=linux/amd64 node:22-slim
 
 #支持私库
+alexgshaw/break-filter-js-from-html:20251031
+alexgshaw/adaptive-rejection-sampler:20251031
+alexgshaw/build-cython-ext:20251031
+alexgshaw/bn-fit-modify:20251031
 swebench/sweb.eval.x86_64.django_1776_django-11880:latest
 --platform=linux/amd64 volcengine/sandbox-fusion:server-20250609
 snowdreamtech/frps
