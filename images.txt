@@ -12,7 +12,7 @@ redis:latest
 --platform=linux/amd64 node:22-slim
 
 #支持私库
---platform=linux/arm64 volcengine/sandbox-fusion:server-20250609
+swebench/sweb.eval.x86_64.django_1776_django-11880:latest
 --platform=linux/amd64 volcengine/sandbox-fusion:server-20250609
 snowdreamtech/frps
 --platform=linux/arm64 snowdreamtech/frpc
