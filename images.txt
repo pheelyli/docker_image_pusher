@@ -12,6 +12,7 @@ redis:latest
 --platform=linux/amd64 node:22-slim
 
 #支持私库
+jgraph/drawio:latest
 alexgshaw/break-filter-js-from-html:20251031
 alexgshaw/adaptive-rejection-sampler:20251031
 alexgshaw/build-cython-ext:20251031
