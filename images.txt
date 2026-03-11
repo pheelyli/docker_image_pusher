@@ -12,6 +12,8 @@ redis:latest
 --platform=linux/amd64 node:22-slim
 
 #支持私库
+--platform=linux/arm64 docker.io/nginx:latest
+--platform=linux/amd64 docker.io/nginx:latest
 jgraph/drawio:latest
 alexgshaw/break-filter-js-from-html:20251031
 alexgshaw/adaptive-rejection-sampler:20251031
