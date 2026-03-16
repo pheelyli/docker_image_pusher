@@ -1,6 +1,10 @@
 nginx:latest
 --platform=linux/arm64 nginx:latest
 --platform=linux/amd64 nginx:latest
+--platform=linux/arm64 node:24-bookworm
+--platform=linux/amd64 node:24-bookworm
+--platform=linux/arm64 node:24-bookworm-slim
+--platform=linux/amd64 node:24-bookworm-slim
 busybox:latest
 mariadb:10.6
 mysql:8.2
