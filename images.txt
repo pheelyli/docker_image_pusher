@@ -18,6 +18,10 @@ redis:latest
 --platform=linux/amd64 node:22-slim
 
 #支持私库
+ghcr.io/immich-app/immich-server:latest
+ghcr.io/immich-app/immich-machine-learning:latest
+docker.io/valkey/valkey:9
+ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0
 jgraph/drawio:latest
 alexgshaw/break-filter-js-from-html:20251031
 alexgshaw/adaptive-rejection-sampler:20251031
