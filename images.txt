@@ -61,9 +61,9 @@ cgr.dev/chainguard/minio
 docker.io/redis:7
 docker.io/postgres:17
 vllm/vllm-router:nightly
-agentscope/copaw:latest
---platform=linux/arm64 shopsensefynd/python:3.11-alpine-pandas-numpy
---platform=linux/amd64 shopsensefynd/python:3.11-alpine-pandas-numpy
+#agentscope/copaw:latest
+#--platform=linux/arm64 shopsensefynd/python:3.11-alpine-pandas-numpy
+#--platform=linux/amd64 shopsensefynd/python:3.11-alpine-pandas-numpy
 
 
 #dify
