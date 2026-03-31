@@ -18,7 +18,7 @@ redis:latest
 --platform=linux/amd64 node:22-slim
 
 #支持私库
-ghcr.io/vllm-project/vllm-router:latest
+ghcr.io/vllm-project/production-stack/router:latest
 verdaccio/verdaccio:latest
 ghcr.io/immich-app/immich-server:release
 ghcr.io/immich-app/immich-machine-learning:release-cuda
