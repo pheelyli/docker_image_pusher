@@ -16,10 +16,10 @@ redis:latest
 --platform=linux/amd64 python:3.12-slim-bookworm
 --platform=linux/arm64 node:22-slim
 --platform=linux/amd64 node:22-slim
+python:3.12-slim-bullseye
 
 #支持私库
 rustlang/rust:nightly-bullseye
-python:3.12-slim-bullseye
 verdaccio/verdaccio:latest
 ghcr.io/immich-app/immich-server:release
 ghcr.io/immich-app/immich-machine-learning:release-cuda
