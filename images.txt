@@ -10,6 +10,7 @@ mariadb:10.6
 mysql:8.2
 mysql:8.0
 redis:latest
+redis:7-alpine
 --platform=linux/arm64 python:3.11-slim
 --platform=linux/amd64 python:3.11-slim
 --platform=linux/arm64 python:3.12-slim-bookworm
@@ -17,8 +18,13 @@ redis:latest
 --platform=linux/arm64 node:22-slim
 --platform=linux/amd64 node:22-slim
 python:3.12-slim-bullseye
+postgres:16-alpine
+
 
 #支持私库
+ghcr.io/iflytek/skillhub-scanner:latest
+ghcr.io/iflytek/skillhub-server:latest
+ghcr.io/iflytek/skillhub-web:latest
 rustlang/rust:nightly-bullseye
 verdaccio/verdaccio:latest
 ghcr.io/immich-app/immich-server:release
