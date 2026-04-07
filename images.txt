@@ -50,7 +50,6 @@ resilio/sync
 garybowers/iventoy:latest
 pytorch/pytorch:2.5.1-cuda12.1-cudnn9-devel
 calciumion/new-api:latest
-vllm/vllm-openai:latest
 --platform=linux/arm64 docker.io/docker/dockerfile:1.7-labs
 --platform=linux/amd64 docker.io/docker/dockerfile:1.7-labs
 --platform=linux/arm64 ghcr.io/astral-sh/uv:0.6.14
@@ -69,7 +68,6 @@ docker.io/clickhouse/clickhouse-server
 cgr.dev/chainguard/minio
 docker.io/redis:7
 docker.io/postgres:17
-vllm/vllm-router:nightly
 #agentscope/copaw:latest
 #--platform=linux/arm64 shopsensefynd/python:3.11-alpine-pandas-numpy
 #--platform=linux/amd64 shopsensefynd/python:3.11-alpine-pandas-numpy
