@@ -22,7 +22,7 @@ postgres:16-alpine
 
 
 #支持私库
-devpi/devpi-server:latest
+jonasal/devpi-server:latest
 ghcr.io/iflytek/skillhub-scanner:latest
 ghcr.io/iflytek/skillhub-server:latest
 ghcr.io/iflytek/skillhub-web:latest
