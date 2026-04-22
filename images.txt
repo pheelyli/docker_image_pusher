@@ -74,6 +74,13 @@ docker.io/postgres:17
 #--platform=linux/arm64 shopsensefynd/python:3.11-alpine-pandas-numpy
 #--platform=linux/amd64 shopsensefynd/python:3.11-alpine-pandas-numpy
 
+#ragflow
+pgsty/minio:RELEASE.2026-03-25T00-00-00Z
+quay.io/minio/minio:RELEASE.2023-12-20T01-00-02Z
+mysql:8.0.39
+valkey/valkey:8
+elasticsearch:8.11.3
+
 
 #dify
 langgenius/dify-api:1.11.1
@@ -85,11 +92,7 @@ langgenius/dify-plugin-daemon:0.5.2-local
 ubuntu/squid:latest
 semitechnologies/weaviate:1.27.0
 
-#ragflow
-quay.io/minio/minio:RELEASE.2023-12-20T01-00-02Z
-mysql:8.0.39
-valkey/valkey:8
-elasticsearch:8.11.3
+
 
 #支持指定架构
 #--platform=linux/arm64 xiaoyaliu/alist
