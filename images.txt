@@ -83,12 +83,12 @@ elasticsearch:8.11.3
 
 
 #dify
-langgenius/dify-api:1.11.1
-langgenius/dify-web:1.11.1
+langgenius/dify-api:1.13.3
+langgenius/dify-web:1.13.3
 postgres:15-alpine
 redis:6-alpine
-langgenius/dify-sandbox:0.2.12
-langgenius/dify-plugin-daemon:0.5.2-local
+langgenius/dify-sandbox:0.2.14
+langgenius/dify-plugin-daemon:0.5.3-local
 ubuntu/squid:latest
 semitechnologies/weaviate:1.27.0
 
