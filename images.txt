@@ -26,9 +26,6 @@ postgres:16-alpine
 docker.io/lukealonso/sglang-cuda13-b12x
 jonasal/devpi-client:latest
 jonasal/devpi-server:latest
-ghcr.io/iflytek/skillhub-scanner:latest
-ghcr.io/iflytek/skillhub-server:latest
-ghcr.io/iflytek/skillhub-web:latest
 rustlang/rust:nightly-bullseye
 verdaccio/verdaccio:latest
 ghcr.io/immich-app/immich-server:release
