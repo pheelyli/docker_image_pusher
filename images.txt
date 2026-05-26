@@ -20,9 +20,12 @@ redis:7-alpine
 python:3.12-slim-bullseye
 python:3.10-slim
 postgres:16-alpine
+golang:1.26.1-alpine
+debian:bookworm-slim
 
 
 #支持私库
+oven/bun:1
 --platform=linux/arm64 ubuntu/nginx:1.24-24.04_edge
 --platform=linux/amd64 ubuntu/nginx:1.24-24.04_edge
 docker.io/lukealonso/sglang-cuda13-b12x
