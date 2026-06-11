@@ -28,6 +28,7 @@ debian:bookworm-slim
 
 
 #支持私库
+rustdesk/rustdesk-server:latest
 ghcr.io/jdx/mise:2026.5.11
 ghcr.io/immich-app/base-server-dev:202605051129
 ghcr.io/immich-app/base-server-prod:202605051129
