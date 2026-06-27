@@ -29,9 +29,9 @@ debian:bookworm-slim
 
 #支持私库
 rustdesk/rustdesk-server:latest
-ghcr.io/jdx/mise:2026.5.11
-ghcr.io/immich-app/base-server-dev:202605051129
-ghcr.io/immich-app/base-server-prod:202605051129
+ghcr.io/jdx/mise:2026.6.10
+ghcr.io/immich-app/base-server-dev:202606161235
+ghcr.io/immich-app/base-server-prod:202606161235
 nvidia/cuda:12.2.2-runtime-ubuntu22.04
 oven/bun:1
 --platform=linux/arm64 ubuntu/nginx:1.24-24.04_edge
