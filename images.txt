@@ -28,6 +28,7 @@ debian:bookworm-slim
 
 
 #支持私库
+jonnyan404/anytls:latest
 rustdesk/rustdesk-server:latest
 ghcr.io/jdx/mise:2026.6.10
 ghcr.io/immich-app/base-server-dev:202606161235
