@@ -29,6 +29,7 @@ debian:bookworm-slim
 
 
 #支持私库
+qdrant/qdrant:latest
 jonnyan404/anytls:latest
 rustdesk/rustdesk-server:latest
 ghcr.io/jdx/mise:2026.6.10
