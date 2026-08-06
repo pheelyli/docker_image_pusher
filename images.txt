@@ -29,6 +29,7 @@ debian:bookworm-slim
 
 
 #支持私库
+ugeek/webdav:amd64
 qdrant/qdrant:latest
 jonnyan404/anytls:latest
 rustdesk/rustdesk-server:latest
