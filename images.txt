@@ -33,6 +33,7 @@ debian:bookworm-slim
 
 
 #支持私库
+docker.io/library/ubuntu:24.04
 falkordb/falkordb:latest
 ugeek/webdav:amd64
 qdrant/qdrant:latest
