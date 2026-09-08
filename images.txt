@@ -1,3 +1,4 @@
+ubuntu:20.04
 nginx:latest
 neo4j:ubi10
 --platform=linux/arm64 nginx:latest
