@@ -34,6 +34,7 @@ debian:bookworm-slim
 
 
 #支持私库
+oven/bun:1.4.0
 docker.io/library/ubuntu:24.04
 falkordb/falkordb:latest
 ugeek/webdav:amd64
@@ -44,7 +45,6 @@ ghcr.io/jdx/mise:2026.6.10
 ghcr.io/immich-app/base-server-dev:202606161235
 ghcr.io/immich-app/base-server-prod:202606161235
 nvidia/cuda:12.2.2-runtime-ubuntu22.04
-oven/bun:1
 --platform=linux/arm64 ubuntu/nginx:1.24-24.04_edge
 --platform=linux/amd64 ubuntu/nginx:1.24-24.04_edge
 docker.io/lukealonso/sglang-cuda13-b12x
