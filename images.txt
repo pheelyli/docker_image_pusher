@@ -34,6 +34,7 @@ debian:bookworm-slim
 
 
 #支持私库
+vllm/vllm-openai:qwen38-flash-next
 oven/bun:1.4.0
 docker.io/library/ubuntu:24.04
 falkordb/falkordb:latest
