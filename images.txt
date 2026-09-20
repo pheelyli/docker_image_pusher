@@ -34,7 +34,7 @@ debian:bookworm-slim
 
 
 #支持私库
-ghcr.io/gittensor-ai-lab/sparkinfer-qwen38:v0.5.10
+ghcr.io/gittensor-ai-lab/sparkinfer-qwen38:0.5.10
 nvidia/cuda:13.0.3-base-ubuntu24.04
 vllm/vllm-openai:qwen38-flash-next
 oven/bun:1.4.0
