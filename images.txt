@@ -34,8 +34,9 @@ debian:bookworm-slim
 
 
 #支持私库
-ghcr.io/gittensor-ai-lab/sparkinfer-qwen38:0.5.10
+nvidia/cuda:12.8.1-devel-ubuntu24.04
 nvidia/cuda:13.0.3-base-ubuntu24.04
+nvidia/cuda:12.8.1-base-ubuntu24.04
 vllm/vllm-openai:qwen38-flash-next
 oven/bun:1.4.0
 docker.io/library/ubuntu:24.04
@@ -55,10 +56,7 @@ jonasal/devpi-client:latest
 jonasal/devpi-server:latest
 rustlang/rust:nightly-bullseye
 verdaccio/verdaccio:latest
-ghcr.io/immich-app/immich-server:release
-ghcr.io/immich-app/immich-machine-learning:release-cuda
 docker.io/valkey/valkey:9
-ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0
 jgraph/drawio:latest
 alexgshaw/break-filter-js-from-html:20251031
 alexgshaw/adaptive-rejection-sampler:20251031
@@ -100,6 +98,9 @@ docker.io/postgres:17
 #agentscope/copaw:latest
 #--platform=linux/arm64 shopsensefynd/python:3.11-alpine-pandas-numpy
 #--platform=linux/amd64 shopsensefynd/python:3.11-alpine-pandas-numpy
+ghcr.io/immich-app/immich-server:release
+ghcr.io/immich-app/immich-machine-learning:release-cuda
+ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0
 
 #ragflow
 pgsty/minio:RELEASE.2026-03-25T00-00-00Z
