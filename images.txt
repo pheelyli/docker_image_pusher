@@ -34,6 +34,8 @@ debian:bookworm-slim
 
 
 #支持私库
+--platform=linux/arm64 macrosan/linux_amd64_kylin:v10-sp1
+--platform=linux/amd64 macrosan/linux_amd64_kylin:v10-sp1
 prom/prometheus:latest
 prom/statsd-exporter:latest
 grafana/grafana-enterprise
