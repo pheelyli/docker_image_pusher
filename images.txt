@@ -34,6 +34,8 @@ debian:bookworm-slim
 
 
 #支持私库
+deeplethe/utopia:0.1.0-rc7
+pgvector/pgvector:pg16
 prom/prometheus:latest
 prom/statsd-exporter:latest
 grafana/grafana-enterprise
