@@ -1,6 +1,7 @@
 # 立即
 ghcr.io/deeplethe/utopia:0.1.0-rc7
 pgvector/pgvector:pg16
+docker.gitea.com/gitea:28.1.0-rootless
 
 
 # dockerhub根
