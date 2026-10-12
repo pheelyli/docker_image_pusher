@@ -2,7 +2,7 @@
 ghcr.io/deeplethe/utopia:0.1.0-rc7
 pgvector/pgvector:pg16
 docker.gitea.com/gitea:28.1.0-rootless
-
+docker.io/library/postgres:18
 
 # dockerhub根
 ubuntu:20.04
