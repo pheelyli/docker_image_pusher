@@ -1,9 +1,9 @@
 # 立即
-nginx:1.27-alpine
 
 # dockerhub根
 ubuntu:20.04
 nginx:latest
+nginx:1.27-alpine
 neo4j:ubi10
 --platform=linux/arm64 nginx:latest
 --platform=linux/amd64 nginx:latest
@@ -114,9 +114,11 @@ ghcr.io/immich-app/immich-machine-learning:release-cuda
 ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0
 
 #ragflow
-pgsty/minio:RELEASE.2026-03-25T00-00-00Z
+nats:2.14.2
+pgsty/silo:RELEASE.2026-08-06T00-00-00Z
+apache/kvrocks:2.16.0
 #quay.io/minio/minio:RELEASE.2023-12-20T01-00-02Z
-mysql:8.0.39
+mysql:8.0.40
 valkey/valkey:8
 elasticsearch:8.11.3
 
