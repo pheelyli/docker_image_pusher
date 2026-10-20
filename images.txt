@@ -36,7 +36,7 @@ postgres:16-alpine
 golang:1.26.1-alpine
 debian:bookworm-slim
 
-
+ 
 #支持私库
 ghcr.io/deeplethe/utopia:0.1.0-rc7
 docker.gitea.com/gitea:28.1.0-rootless
