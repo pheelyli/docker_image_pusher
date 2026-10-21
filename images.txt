@@ -1,4 +1,23 @@
 # 立即
+wechatopenai/weknora-ui:latest
+wechatopenai/weknora-app:latest
+wechatopenai/weknora-sandbox:latest
+wechatopenai/weknora-docreader:latest
+paradedb/paradedb:v0.25.11-pg17
+redis:7.0-alpine
+busybox:1.36
+searxng/searxng:latest
+pgsty/minio:RELEASE.2026-08-04T00-00-00Z
+neo4j:2025.10.1
+qdrant/qdrant:v1.16.2
+dexidp/dex:latest
+paradedb/paradedb:v0.25.11-pg17
+clickhouse/clickhouse-server:24.8
+pgsty/minio:RELEASE.2026-08-04T00-00-00Z
+langfuse/langfuse-worker:3
+langfuse/langfuse:3
+
+
 
 # dockerhub根
 ubuntu:20.04
