@@ -1,4 +1,7 @@
 # 立即
+ghcr.io/deeplethe/utopia:0.1.0-rc9
+
+# weknora
 wechatopenai/weknora-ui:latest
 wechatopenai/weknora-app:latest
 wechatopenai/weknora-sandbox:latest
@@ -57,7 +60,6 @@ debian:bookworm-slim
 
 
 #支持私库
-ghcr.io/deeplethe/utopia:0.1.0-rc7
 docker.gitea.com/gitea:28.1.0-rootless
 prom/prometheus:latest
 prom/statsd-exporter:latest
