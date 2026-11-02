@@ -1,5 +1,14 @@
 # 立即
-ghcr.io/deeplethe/utopia:0.1.0-rc9
+
+# helix-foundry
+ghcr.io/helixdb/foundry-site:0.1.2
+ghcr.io/helixdb/foundry:0.1.1
+ghcr.io/helixdb/ontology-agent:0.1.0
+ghcr.io/helixdb/helixdb:v0.0.12
+registry.k8s.io/pause:3.10
+chrislusf/seaweedfs:4.47
+mysql:8.0
+postgres:17.11-alpine
 
 # weknora
 wechatopenai/weknora-ui:latest
@@ -60,6 +69,7 @@ debian:bookworm-slim
 
 
 #支持私库
+ghcr.io/deeplethe/utopia:0.1.0-rc9
 docker.gitea.com/gitea:28.1.0-rootless
 prom/prometheus:latest
 prom/statsd-exporter:latest
