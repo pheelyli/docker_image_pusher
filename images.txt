@@ -1,5 +1,6 @@
 # 立即
 ghcr.io/local-inference-lab/vllm:release-10152026 
+ghcr.io/local-inference-lab/vllm:karmic-kraken-beta-20261020
 
 # helix-foundry
 ghcr.io/helixdb/foundry-site:0.1.2
