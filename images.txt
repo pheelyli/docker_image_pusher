@@ -1,4 +1,5 @@
 # 立即
+ghcr.io/local-inference-lab/vllm:release-10152026
 
 # helix-foundry
 ghcr.io/helixdb/foundry-site:0.1.2
