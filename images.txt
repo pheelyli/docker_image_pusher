@@ -66,7 +66,7 @@ python:3.13-slim-trixie
 python:3.13-slim
 python:3.14-slim
 postgres:16-alpine
-golang:1.26.1-alpine
+golang:1.26.10-alpine
 debian:bookworm-slim
 
 
@@ -80,7 +80,7 @@ nvidia/cuda:12.8.1-devel-ubuntu24.04
 nvidia/cuda:13.0.3-base-ubuntu24.04
 nvidia/cuda:12.8.1-base-ubuntu24.04
 vllm/vllm-openai:qwen38-flash-next
-oven/bun:1.4.0
+oven/bun:1.4.4
 docker.io/library/ubuntu:24.04
 falkordb/falkordb:latest
 ugeek/webdav:amd64
