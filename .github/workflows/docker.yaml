@@ -25,6 +25,21 @@ jobs:
         df -hT
         echo "=============================================================================="
 
+# ========== 新增：【拉取镜像前】清理 runner diag 日志 ==========
+    - name: Clean runner diag logs before pull
+      run: |
+        echo "Start clean runner worker diag logs"
+        # 清理诊断日志，兼容 self-hosted runner 路径
+        rm -rf /home/runner/actions-runner/cached/*/_diag/*.log || true
+        rm -rf /home/runner/actions-runner/_diag/*.log || true
+        # 清理旧工作缓存
+        rm -rf /home/runner/actions-runner/_work/* || true
+        sync
+        echo "Clean diag logs done"
+        echo "=============================================================================="
+        df -hT
+        echo "=============================================================================="
+
     # 增加可用磁盘空间
     - name: Maximize build space
       uses: easimon/maximize-build-space@master
