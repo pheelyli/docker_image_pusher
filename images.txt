@@ -1,120 +1,171 @@
-name: Docker-Skopeo-Copy-Hosted
-on:
-  workflow_dispatch:
-  push:
-    branches: [ main ]
+# 立即
+ghcr.io/local-inference-lab/vllm:release-10152026
 
-env:
-  ALIYUN_REGISTRY: "${{ secrets.ALIYUN_REGISTRY }}"
-  ALIYUN_NAME_SPACE: "${{ secrets.ALIYUN_NAME_SPACE }}"
-  ALIYUN_REGISTRY_USER: "${{ secrets.ALIYUN_REGISTRY_USER }}"
-  ALIYUN_REGISTRY_PASSWORD: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
+# helix-foundry
+ghcr.io/helixdb/foundry-site:0.1.2
+ghcr.io/helixdb/foundry:0.1.1
+ghcr.io/helixdb/ontology-agent:0.1.0
+ghcr.io/helixdb/helixdb:v0.0.12
+registry.k8s.io/pause:3.10
+chrislusf/seaweedfs:4.47
+mysql:8.0
+postgres:17.11-alpine
 
-jobs:
-  build:
-    name: Skopeo-Transfer
-    runs-on: ubuntu-latest
-    steps:
-      - name: Before free space
-        run: |
-          echo "Before clean"
-          df -hT
+# weknora
+wechatopenai/weknora-ui:latest
+wechatopenai/weknora-app:latest
+wechatopenai/weknora-sandbox:latest
+wechatopenai/weknora-docreader:latest
+paradedb/paradedb:v0.25.11-pg17
+redis:7.0-alpine
+busybox:1.36
+searxng/searxng:latest
+pgsty/minio:RELEASE.2026-08-04T00-00-00Z
+neo4j:2025.10.1
+qdrant/qdrant:v1.16.2
+dexidp/dex:latest
+paradedb/paradedb:v0.25.11-pg17
+clickhouse/clickhouse-server:24.8
+pgsty/minio:RELEASE.2026-08-04T00-00-00Z
+langfuse/langfuse-worker:3
+langfuse/langfuse:3
 
-      # 原版自带的清理动作，在托管机上生效，释放更多root空间
-      - name: Maximize build space
-        uses: easimon/maximize-build-space@master
-        with:
-          root-reserve-mb: 2048
-          swap-size-mb: 128
-          remove-dotnet: 'true'
-          remove-haskell: 'true'
 
-      - name: After free space
-        run: |
-          echo "After clean"
-          df -hT
 
-      - name: Checkout Code
-        uses: actions/checkout@v4
+# dockerhub根
+ubuntu:20.04
+nginx:latest
+nginx:1.27-alpine
+neo4j:ubi10
+--platform=linux/arm64 nginx:latest
+--platform=linux/amd64 nginx:latest
+--platform=linux/arm64 node:24-bookworm
+--platform=linux/amd64 node:24-bookworm
+--platform=linux/arm64 node:24-bookworm-slim
+--platform=linux/amd64 node:24-bookworm-slim
+--platform=linux/arm64 node:22-slim
+--platform=linux/amd64 node:22-slim
+node:26-alpine
+busybox:latest
+mariadb:10.6
+mysql:8.2
+mysql:8.0
+redis:latest
+redis:7-alpine
+python:3.10
+python:3.10-slim
+python:3.11-bookworm
+python:3.11-slim-bookworm
+--platform=linux/arm64 python:3.11-slim
+--platform=linux/amd64 python:3.11-slim
+--platform=linux/arm64 python:3.12-slim-bookworm
+--platform=linux/amd64 python:3.12-slim-bookworm
+python:3.12-slim-bullseye
+python:3.13-slim-trixie
+python:3.13-slim
+python:3.14-slim
+postgres:16-alpine
+golang:1.26.10-alpine
+debian:bookworm-slim
 
-      - name: Skopeo copy transfer
-        run: |
-          set -euo pipefail
-          skopeo login --username "${ALIYUN_REGISTRY_USER}" --password "${ALIYUN_REGISTRY_PASSWORD}" "${ALIYUN_REGISTRY}"
 
-          declare -A duplicate_images
-          declare -A temp_map
+#支持私库
+ghcr.io/deeplethe/utopia:0.1.0-rc9
+docker.gitea.com/gitea:28.1.0-rootless
+prom/prometheus:latest
+prom/statsd-exporter:latest
+grafana/grafana-enterprise
+nvidia/cuda:12.8.1-devel-ubuntu24.04
+nvidia/cuda:13.0.3-base-ubuntu24.04
+nvidia/cuda:12.8.1-base-ubuntu24.04
+vllm/vllm-openai:qwen38-flash-next
+oven/bun:1.4.4
+docker.io/library/ubuntu:24.04
+falkordb/falkordb:latest
+ugeek/webdav:amd64
+qdrant/qdrant:latest
+jonnyan404/anytls:latest
+rustdesk/rustdesk-server:latest
+ghcr.io/jdx/mise:2026.6.10
+ghcr.io/immich-app/base-server-dev:202606161235
+ghcr.io/immich-app/base-server-prod:202606161235
+nvidia/cuda:12.2.2-runtime-ubuntu22.04
+--platform=linux/arm64 ubuntu/nginx:1.24-24.04_edge
+--platform=linux/amd64 ubuntu/nginx:1.24-24.04_edge
+docker.io/lukealonso/sglang-cuda13-b12x
+jonasal/devpi-client:latest
+jonasal/devpi-server:latest
+rustlang/rust:nightly-bullseye
+verdaccio/verdaccio:latest
+docker.io/valkey/valkey:9
+jgraph/drawio:latest
+alexgshaw/break-filter-js-from-html:20251031
+alexgshaw/adaptive-rejection-sampler:20251031
+alexgshaw/build-cython-ext:20251031
+alexgshaw/bn-fit-modify:20251031
+swebench/sweb.eval.x86_64.django_1776_django-11880:latest
+--platform=linux/amd64 volcengine/sandbox-fusion:server-20250609
+snowdreamtech/frps
+--platform=linux/arm64 snowdreamtech/frpc
+--platform=linux/amd64 snowdreamtech/frpc
+fraoustin/fancyindex:latest
+bigbugcc/3x-ui:latest
+tobyxdd/hysteria:latest
+linuxserver/transmission:latest
+mikolatero/vlmcsd:latest
+resilio/sync
+garybowers/iventoy:latest
+pytorch/pytorch:2.5.1-cuda12.1-cudnn9-devel
+calciumion/new-api:latest
+--platform=linux/arm64 docker.io/docker/dockerfile:1.7-labs
+--platform=linux/amd64 docker.io/docker/dockerfile:1.7-labs
+docker/dockerfile:1
+--platform=linux/arm64 ghcr.io/astral-sh/uv:0.6.14
+--platform=linux/amd64 ghcr.io/astral-sh/uv:0.6.14
+teddysun/xray:latest
+joxit/docker-registry-ui:latest
+herberthe0229/iptv-sources:latest
+ghcr.io/itsusinn/tuic-server:latest
+ghcr.io/sagernet/sing-box
+ghcr.io/wg-easy/wg-easy:15
+alexsuntop/mineru:2.7.6
+ghcr.io/openclaw/openclaw:main
+docker.io/langfuse/langfuse-worker:3
+docker.io/langfuse/langfuse:3
+docker.io/clickhouse/clickhouse-server
+cgr.dev/chainguard/minio
+docker.io/redis:7
+docker.io/postgres:17
+pgvector/pgvector:pg16
+docker.io/library/postgres:18
+#agentscope/copaw:latest
+#--platform=linux/arm64 shopsensefynd/python:3.11-alpine-pandas-numpy
+#--platform=linux/amd64 shopsensefynd/python:3.11-alpine-pandas-numpy
+ghcr.io/immich-app/immich-server:release
+ghcr.io/immich-app/immich-machine-learning:release-cuda
+ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0
 
-          # 第一轮扫描，找出重名镜像
-          while IFS= read -r line || [ -n "$line" ]; do
-            [[ -z "$line" ]] && continue
-            if echo "$line" | grep -q '^\s*#'; then
-              continue
-            fi
-            image=$(echo "$line" | awk '{for(i=1;i<=NF;i++){if($i !~ /^--platform/) printf "%s ",$i}; print ""}' | xargs)
-            image="${image%%@*}"
-            image_name_tag=$(echo "$image" | awk -F'/' '{print $NF}')
-            name_space=$(echo "$image" | awk -F'/' '{if (NF==3) print $2; else if (NF==2) print $1; else print ""}')
-            name_space="${name_space}_"
-            image_name=$(echo "$image_name_tag" | awk -F':' '{print $1}')
+#ragflow
+nats:2.14.2
+pgsty/silo:RELEASE.2026-08-06T00-00-00Z
+apache/kvrocks:2.16.0
+#quay.io/minio/minio:RELEASE.2023-12-20T01-00-02Z
+mysql:8.0.40
+valkey/valkey:8
+elasticsearch:8.11.3
 
-            if [[ -n "${temp_map[$image_name]:-}" ]]; then
-              if [[ "${temp_map[$image_name]}" != "$name_space" ]]; then
-                echo "duplicate image name: $image_name"
-                duplicate_images[$image_name]="true"
-              fi
-            else
-              temp_map[$image_name]="$name_space"
-            fi
-          done < images.txt
 
-          # 第二轮批量复制
-          while IFS= read -r line || [ -n "$line" ]; do
-            [[ -z "$line" ]] && continue
-            if echo "$line" | grep -q '^\s*#'; then
-              continue
-            fi
+#dify
+langgenius/dify-api:1.13.3
+langgenius/dify-web:1.13.3
+postgres:15-alpine
+redis:6-alpine
+langgenius/dify-sandbox:0.2.14
+langgenius/dify-plugin-daemon:0.5.3-local
+ubuntu/squid:latest
+semitechnologies/weaviate:1.27.0
 
-            echo "======================================"
-            echo "Processing line: $line"
 
-            platform=$(echo "$line" | awk -F'--platform[ =]' '{if (NF>1) print $2}' | awk '{print $1}')
-            src_image=$(echo "$line" | awk '{for(i=1;i<=NF;i++){if($i !~ /^--platform/) printf "%s ",$i}; print ""}' | xargs)
-            src_image="${src_image%%@*}"
 
-            echo "src_image: $src_image"
-            echo "platform: $platform"
-
-            image_name_tag=$(echo "$src_image" | awk -F'/' '{print $NF}')
-            name_space=$(echo "$src_image" | awk -F'/' '{if (NF==3) print $2; else if (NF==2) print $1; else print ""}')
-            image_name=$(echo "$image_name_tag" | awk -F':' '{print $1}')
-
-            name_space_prefix=""
-            if [[ -n "${duplicate_images[$image_name]:-}" ]]; then
-              if [[ -n "${name_space}" ]]; then
-                name_space_prefix="${name_space}_"
-              fi
-            fi
-
-            if [ -z "$platform" ]; then
-              platform_prefix=""
-              platform_arg=""
-            else
-              platform_prefix="${platform//\//_}_"
-              plat_os=${platform%/*}
-              plat_arch=${platform#*/}
-              platform_arg="--override-os ${plat_os} --override-arch ${plat_arch}"
-            fi
-
-            dest_image="${ALIYUN_REGISTRY}/${ALIYUN_NAME_SPACE}/${platform_prefix}${name_space_prefix}${image_name_tag}"
-            echo "dest_image: $dest_image"
-
-            skopeo copy ${platform_arg} \
-              "docker://${src_image}" \
-              "docker://${dest_image}"
-
-            echo "✅ Transfer done: ${src_image} -> ${dest_image}"
-            echo "======================================"
-          done < images.txt
-
-          skopeo logout "${ALIYUN_REGISTRY}"
+#支持指定架构
+#--platform=linux/arm64 xiaoyaliu/alist
