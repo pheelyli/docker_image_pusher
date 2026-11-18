@@ -58,7 +58,6 @@ jobs:
             name_space="${name_space}_"
             image_name=$(echo "$image_name_tag" | awk -F':' '{print $1}')
 
-            # 重点修改：${temp_map[$image_name]:-} 不存在返回空，不会触发 -u
             if [[ -n "${temp_map[$image_name]:-}" ]]; then
               if [[ "${temp_map[$image_name]}" != "$name_space" ]]; then
                 echo "duplicate image name: $image_name"
@@ -91,7 +90,6 @@ jobs:
             image_name=$(echo "$image_name_tag" | awk -F':' '{print $1}')
 
             name_space_prefix=""
-            # 这里同样加上 :-
             if [[ -n "${duplicate_images[$image_name]:-}" ]]; then
               if [[ -n "${name_space}" ]]; then
                 name_space_prefix="${name_space}_"
@@ -103,7 +101,9 @@ jobs:
               platform_arg=""
             else
               platform_prefix="${platform//\//_}_"
-              platform_arg="--platform ${platform}"
+              plat_os=${platform%/*}
+              plat_arch=${platform#*/}
+              platform_arg="--override-os ${plat_os} --override-arch ${plat_arch}"
             fi
 
             dest_image="${ALIYUN_REGISTRY}/${ALIYUN_NAME_SPACE}/${platform_prefix}${name_space_prefix}${image_name_tag}"
